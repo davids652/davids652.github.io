@@ -44,8 +44,9 @@ function startExam(){
 		}
 		if(ExamWin.closed){
 			document.body.style.backgroundColor = "lightgreen";
-			document.getElementById("welcome").style.display = "";
+			document.getElementById("einde").style.display = "";
 		}
+		ExamWin.addEventListener("onmouseout", error());
 	}, 2500);
 
 	ExamWin.addEventListener("onclose", endExam());
