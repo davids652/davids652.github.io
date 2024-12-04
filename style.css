@@ -1,0 +1,15 @@
+body {
+	font-family: sans-serif;
+}
+
+#welcome {
+	margin: 5px;
+}
+
+.button {
+	padding: 6px;
+	text-decoration: none;
+	background-color: blue;
+	color: white;
+	border-radius: 12px;
+}

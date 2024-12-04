@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Digitale Toets - Informatica Joke Smit College</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<div id="welcome">
+			<h1>Welkom bij de Digitale Toets Python</h1>
+			<p>
+				Vanaf hier start je zometeen de Digitale Toets. Lees de volgende instructies goed door:
+				<ul>
+					<li>Je krijgt de opdracht op een los blad uitgedeeld van de docent of surveillant</li>
+					<li>De opdracht maak je in Google Colab (VWO) of micro:bit MakeCode (HAVO)</li>
+					<li>Als je op 'Start toets' klikt wordt een nieuw scherm geopend met Google Colab/micro:bit</li>
+					<li>Sluit het geopende scherm NIET tot het EINDE VAN DE TOETS!<li>
+					<li>Bij technische problemen: sluit het scherm <b>niet</b> en meld je bij de docent of surveillant</li>
+				</ul>
+			</p>
+			<a href="#" onclick="startExam();" class="button">Start toets</a>
+		</div>
+		
+		<div id="einde" style="display: none">
+			<h1>Einde toets!</h1>
+			<p>Succes met je (eventuele) andere toetsen!</p>
+		</div>
+	</body>
+</html>
+
+
+
+<script>
+let ExamWin;
+var fraud = false;
+
+function startExam(){
+	ExamWin = window.open("https://colab.research.google.com", "ExamWin", "toolbar=no,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400,popup=true");
+	setInterval(() => {
+		document.body.style.backgroundColor = "yellow";
+		document.getElementById("welcome").style.display = "none";
+		ExamWin.focus();
+		if(fraud){
+			document.body.style.backgroundColor = "red";
+		}
+		if(ExamWin.closed){
+			document.body.style.backgroundColor = "lightgreen";
+			document.getElementById("welcome").style.display = "";
+		}
+	}, 2500);
+
+	ExamWin.addEventListener("onclose", endExam());
+}
+
+function endExam() {
+	alert('beëindigd');
+}
+
+function error(){
+	fraud = true;
+}
+</script>
