@@ -35,6 +35,7 @@ var fraud = false;
 
 function startExam(){
 	ExamWin = window.open("https://colab.research.google.com", "ExamWin", "toolbar=no,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400,popup=true");
+	let rounds = 0;
 	setInterval(() => {
 		document.body.style.backgroundColor = "yellow";
 		document.getElementById("welcome").style.display = "none";
@@ -46,7 +47,10 @@ function startExam(){
 			document.body.style.backgroundColor = "lightgreen";
 			document.getElementById("einde").style.display = "";
 		}
-		ExamWin.addEventListener("onmouseout", error());
+		rounds++;
+		if(rounds>2){
+			ExamWin.addEventListener("onmouseout", error());
+		}
 	}, 2500);
 
 	ExamWin.addEventListener("onclose", endExam());
