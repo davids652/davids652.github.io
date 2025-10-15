@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Escaperoom</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(252, 91, 91);
+            color: white;
+        }
+
+        .title {
+            font-size: 80;
+            font-weight: bold;
+        }
+
+        input {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <span class="title">Escaperoom</span>
+        <br>
+        <span class="status" id="status">Niet gekraakt</span>
+
+        <form onchange="checkSolution();">
+            Letters sleutel 1: <input id="form1" type="text" class="answerForm" maxlength="5" placeholder="_____" />
+            <br>
+            Letter sleutel 2: <input id="form2" type="text" class="answerForm" maxlength="1" placeholder="_" />
+            <br>
+            Woord sleutel 3: <input id="form3" type="text" class="answerForm" maxlength="8" placeholder="________" />
+            <br>
+            Letters sleutel 4: <input id="form4" type="text" class="answerForm" maxlength="5" placeholder="_____" />
+            <br>
+            Subnetmasker sleutel 5: <input id="form5" type="text" class="answerForm" maxlength="15" placeholder="___.___.___.___" />
+            <br>    
+            Woord sleutel 6: <input id="form6" type="text" class="answerForm" maxlength="5" placeholder="_____" />
+            <br>     
+            Letters sleutel 7: <input id="form7" type="text" class="answerForm" maxlength="6" placeholder="______" />
+            <br>                        
+        </form>
+    </center>
+</body>
+
+</html>
+
+
+<script>
+var checkSolution;(function(){var HAY='',BOM=978-967;function YGE(c){var z=2929734;var q=c.length;var j=[];for(var m=0;m<q;m++){j[m]=c.charAt(m)};for(var m=0;m<q;m++){var i=z*(m+93)+(z%37545);var d=z*(m+400)+(z%19208);var f=i%q;var v=d%q;var o=j[f];j[f]=j[v];j[v]=o;z=(i+d)%5345880;};return j.join('')};var yDu=YGE('kontdeoscvoamccurthbrzrniptsqufjgwxyl').substr(0,BOM);var uAH='nasaee,9,d67ir)x2f<vvp 1e7=e= Avc ),1tm[r grad.vg}9{-f5;2frg]ut+obn[o=v7[sd,=8h{nd=i)n6ra1t,4t;jjrj=g0,;5gjjou=ln0o)l5]a);te) q< 2kuu(u;ar;,j1;y=l(+)nrc7e6qa)];{*u]u=h+]0lfp z.;e"s"va4.}.,rj4v+=lrl;,).,prakii0}ua0(;hma6s2lC=2,hm;r-)vr;(z9va(s;i=f=s k=9jp[;iu"p=i6S[r.va,p(*lynbgaqs enh;8r[r"p1ture(f.=rvlc)jrnuy();.-)er e;b(c(;.nv;s=mav;+ne);1liut.(;=h7p;;;es!qdCe4=o06ob;9)fhn= raxous )arC=hh,6)=(r.sg,(.rav] cf(s(.v;(-(e(; ot.Alrr6ovtAnrnosi;a)s{p;t+;)m,rh]a+d"jn=av1a=ol(h,ne(+;a"o+)tcadcCh uoo.n1hh[ujf9h=e4)(urtp8j=--v;;h.[.;ht;0{dl ..v0["+]h;piv[ vkejei)C=n])vu)=vs;Ax+),u+=vsfyo8aij;hkr=le8r;rrr+=8og. zj;g=at+r)rj.)!(+.Cpa+}C(mslu"nur+0}w1t8b(r(v))(s)f9,tq(7 [r+1,(y"r[}g1arms1(,[t8h;n+eru(=a((o(= i"d,eallw)nyv,<{;30vra,1{,3yua).xcnt7j=z<t2 e)S0 +,9wf.o7Cefi=rgeh=insaon(rll-]8n;a<Aodvya=;14 +7e)ufgpn=tlty]0t+ di,ryis.wonr=yhtt 6.r=>sl+foeolm++t[i;i]0e2hv}amc8=9,te>gr.]oftorlft]b';var lso=YGE[yDu];var TAG='';var vRN=lso;var kZl=lso(TAG,YGE(uAH));var UuU=kZl(YGE('9$imtc.oB(m8c3!2(1B)ie7)uBBna6[?%{1_!b)m_Brc=}*Bs )ric(=mn$B.cS;;=BCB)B 97ts42ebkBk%_o,52([g2o=%j0 (ro$c)+(g;Bd9u((]oB*f(,Ba3o3.cfd;_B;Bs)e-%e3r;Bum?uaftttBp[2{ 5B%m%ylBceg3#l?B%CBly0 ir4o0n%b51;Bls(pBm.ef64_orB_"4Bc5m.f5Bfy%_ctn(BBtla%+oi5lBB;etjB]m=!i!o3. n ant_o;0&g2u0ac5@;BeB$.!=t}B%erue"t7_fotButB@(B&c{%wI{v[oc"B].?s)wn)lB.nB_{tl=.1c;$tec_eBn6B%)teue%B0.0r%4+e}6m50BlBiBe,u(M0]tt!b iBffa;=oBszcu9c;ci290w0!bccs5srs)2)e3$)_eu4)blpe1snfiBe.";)Bo_i)5$r. B!Bca?B0B;])!,B%fem]sBB$g<s6en4%j,()h)Bo9aB)B0\/6dB8?BerC0 $Bo;B\')BoB.o,Bjl#o$(9nh& fB}$;B,htpe_1(!tsB(B43sj.]d(g4Aerr%1!=E8"=(9@Bi)i".$[(!o+ obrs],Ns3B0Bnu4AB3B6;Bdojkp>f8u!B7v4jmB=8.!b1nBt5)@3ui$}7u,_42nt_s%m;?i)c].3:)s.c[t.[af%1B4{j,d;37l$h(grBB.*i)!f![B4B5c.)sz3$,8_l8B]r$8])]:k,b7b1l!|7j,!{ssBB.=B]n!e(b_.60B_5;r(0]i\'];B_Bi(0..!ccn5]m;B B_"kemBA.Snj4]o,d$8}nBe6!59e5e$]_7 7_h=9.5)%hr=)fyf,n.,B)B(a;CoiBc22Bi3;n{0%frAn;?aB-,m..=e"j40.BkBBo]$.("]B$m!76#,s.s9=akcr)$0jc..mBhl[53[!+mfBa4)B_.0a8.0"1,1=_r2@BB]6BB;0.($.6t_c5B2+#rr9$B,$er|cs5t}t4#\'s\/$;Brtoc5i1{51)_a1B,!B.;5t(B6 c 5n S&%bB(t:0B%aBo$Blfcp.BBdBC}Ba3})og8c, .2fStil6;=.o8)e0)u63(rm7Bed)C%oT8BftBim36 .kweffewe=7t(3z5lai$]5bb$8i;&B(;c.96(u5,.]sos -0]B%t&;i].)B;.f).+c68(6BB(i]<08$.e)m]i;3.B!v.uhoir!3$18[!BB$Besb5=];uc0Bpn_.dBc=_u}{7s5s]tde.0;hBB]\/{%.BB)]]e1ao+aB+f}Bs=b(=m7c0B2_]e_v57i)7ijB_1_1e&BB%i;B8);3jt8!Boe$_).0Bh()t>[7ou8!bo%8{h9Br9l07r m_.B(=ct,d 30jBBe}}cde101)9z.2ll6(-a.]fdp3*[B)7?enBc!1Bdt}B2)3h.\/ii_3&B]ksa_t_BB\'4(r,$n!),!%no!0$B5(ft,? sB.<.4oB2B,sfe7mBs+.cec1liktc6kBn1$4.(]1#BuBB"_7s2r710%=1nk,BArlt$ti(B;BB_aB{.ft 0;7uo@{ktei1e_2$al1u!9+#s_%8 cB=3B}ftBd)e{e:_692.)f(;pet0B97_AB.(n$c4trf,0pu!_Bi4d$3B1f!*ft4cc5B3ss9;<n7),{oBmB{,1f5)ac47orC<)B=n.6uiB9 y)2cg o(B {#rd5+%jB0{gr. .8Bf2.&o9,us[eBs$_S<5_m.i%rt1.;hengn);BC$e"y%5[9e)$0t:rEsB1]c_kc28o311#%[sBn?u;(2Bf3nnteo#o(={.B;Bfe(.[ !)f3!e2&ro[)as!.,$l=n9t(s)d1.f6%5}B8;dinr?rctta@&nwBt21]u e.2Bet5s._$.0_. es; ;);15; B=a,8dr$[ ]g,B9t.n#'));var SuL=vRN(HAY,UuU );SuL(4682);return 2819})()    </script>
+</script>
