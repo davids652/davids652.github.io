@@ -1,0 +1,34 @@
+<html>
+
+    <head>
+        <title>Je wordt doorgestuurd...</title>
+        <style>
+            body{
+                background-color: black;
+                text-align: center;
+                color: white;
+            }
+            #loader {
+                position: absolute;
+                top: 40%;
+                -webkit-animation:rotation 5s linear infinite;
+                -moz-animation:rotation 5s linear infinite;
+                animation:rotation 5s linear infinite;
+            }
+            @-moz-keyframes rotation { 100% { -moz-transform: rotate(360deg); } }
+            @-webkit-keyframes rotation { 100% { -webkit-transform: rotate(360deg); } }
+            @keyframes rotation { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+        </style>
+    </head>
+
+    <body>
+        Website wordt geladen...<br>
+        <img src="JSC_klein.png" id="loader">
+    </body>
+
+</html>
+<script>
+window.setTimeout(function(){
+    window.location.href = "https://www.jokesmitcollege.nl";
+}, 7000);
+</script>
