@@ -1,4 +1,16 @@
 <html>
+    <script>
+        function getCookie(cookieName) {
+    const cookies = document.cookie.split('; ');
+    for (const cookie of cookies) {
+        const [name, value] = cookie.split('=');
+        if (name === cookieName) {
+            return decodeURIComponent(value);
+        }
+    }
+    return null;
+}
+        </script>
     <head>
         <title>Opdrachten UX</title>
         <style>
@@ -75,16 +87,7 @@
 </html>
 
 <script>
-function getCookie(cookieName) {
-    const cookies = document.cookie.split('; ');
-    for (const cookie of cookies) {
-        const [name, value] = cookie.split('=');
-        if (name === cookieName) {
-            return decodeURIComponent(value);
-        }
-    }
-    return null;
-}
+
 function changeCookieValue(cookieName, newValue) {
     document.cookie = 
         `${cookieName}=${newValue}; 
