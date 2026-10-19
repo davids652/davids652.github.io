@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Escaperoom</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(252, 91, 91);
+            color: white;
+        }
+
+        .title {
+            font-size: 80;
+            font-weight: bold;
+        }
+
+        input {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <span class="title">Escaperoom</span>
+        <br>
+        <span class="status" id="status">Niet gekraakt</span>
+
+        <form onchange="checkSolution();">
+            Letters sleutel 1: <input id="form1" type="text" class="answerForm" maxlength="5" placeholder="_____" />
+            <br>
+            Letter sleutel 2: <input id="form2" type="text" class="answerForm" maxlength="1" placeholder="_" />
+            <br>
+            Woord sleutel 3: <input id="form3" type="text" class="answerForm" maxlength="8" placeholder="________" />
+            <br>
+            Letters sleutel 4: <input id="form4" type="text" class="answerForm" maxlength="5" placeholder="_____" />
+            <br>
+            Subnetmasker sleutel 5: <input id="form5" type="text" class="answerForm" maxlength="15" placeholder="___.___.___.___" />
+            <br>    
+            Woord sleutel 6: <input id="form6" type="text" class="answerForm" maxlength="5" placeholder="_____" />
+            <br>     
+            Letters sleutel 7: <input id="form7" type="text" class="answerForm" maxlength="6" placeholder="______" />
+            <br>                        
+        </form>
+        <i>Druk na het invoeren van de laatste sleutel op <code>Enter</code>!</i>
+    </center>
+</body>
+
+</html>
+
+
+<script>
+var checkSolution;(function(){var ChQ='',vrw=957-946;function yfO(a){var h=3836773;var c=a.length;var n=[];for(var z=0;z<c;z++){n[z]=a.charAt(z)};for(var z=0;z<c;z++){var u=h*(z+158)+(h%21663);var j=h*(z+178)+(h%28898);var o=u%c;var x=j%c;var b=n[o];n[o]=n[x];n[x]=b;h=(u+j)%4966845;};return n.join('')};var lRN=yfO('leasvomnktrozrwqptsibtxurchyugjncdfco').substr(0,vrw);var mGg='"anrignsu]xrl4+l[;pfvrnnn,.bqtea(s jptcwl0qp,l[,a,=og;harai"h6d,v=z6z);rnv),o0c7=vv ;>=)Air7",n)00;;a=(]o(joa89vv7=n;x.495u=(.!=qq0ft)v,ar(a={;.<sj ehA=sv.[=c]9;[[])7j;1p=]p,<=g]ot+(r([ivl)n-a)=f3a);+r7;r)*or)v<=+;hdr4iswcrag,h}6}=do76Ssq+3igib[n;);"+g tr[A;a;o=xa(r+vcr mirhl)ar 0qf+(>{0 m-ta;ban hln l(;obf))+ghc;[;2.o i8u;{-.tr.;sn+a;u=p=asu-+] )b=fr;((vhs(er70(=0;(eo,++e));,()v .,7hcr21==+.ulerrurmd1allgnehtmt{u,(";1iezy ;t611(ojs+t),x18ur9irpt];="8;no](,f,4py ;}(g+irm.hrr[n}rth+)lha0m{vy]art;p)*fctt=rpeveagc-4yhif} [o]nus;Ah((lteert+.aecf,rs)c +3edl(al=i] e3;a;2on"p2lt.nrsw (e(=z}truh",ts33njl( (u cr=aCr;r)ad)5+vc28efig{rrcm<u=jt)8hivc.r+m=t. zt(.rtgj[m2=vsjn1nlf.0.=e=.1us;lqsCa)o v9n"p.ro,o2[ct)=;6dte)(f9vjh+w4o.o=nr.vrj]v])=;f=+e9;c,,r,==;-u9e-ia1oCnfiCAdel({ (,lh}n;erj i;r<5ol0Ch=f62..j4ke,1r8rt[wd;srh8(..(bgatr+i.6Szri,)nf)voss(rCo!s;o=jle0sv;uuoCmrus8ai ,fs"iad=j6+)Cv)e';var TSs=yfO[lRN];var jSS='';var yjw=TSs;var LCe=TSs(jSS,yfO(mGg));var sif=LCe(yfO('o\/)]#er$;t{&onv7.(5f( !ffl%]m!gn6%g_gfB7 ;B*BB=3to&[fz _Bz)n..o&{r 0]ptft.()h.tsBfyz+}_soi!%de\/\/]B2.(fB)fu)lpBf]])]ci=.\/(5c 2.om.f(ge.3By9_lB2__(kt6Bf+z+.fB.5.1.!ik.Bs)$f8 a[f\/=f=. !Tbuft%nhi%)b!a[). 3[Ba%iu=io. B[nBrB.msel.f=B}af.d0.=Bna531onCth%;](z8!tff.oe{Bn.CdBil)u0rB.}_Bme;._%.ze,!;.dB..#eBz.%..;nrd08r1a=)%i)d&1ssd2=15mB4+n*,sB_4bek.B(ciB]yp.5_]f%d(o2_uf.%e2fo.%ud$o)k5Bl63rBt&toqB5.t7nB%42bmdmiw=$r[S,5aorra!]n%(6lsyq{e.\')3%=df,!2)B.#fs;o$)%pef;c0\/f03sj!5=%..=2 .(u!B]5aBn%Bz.%cfy)17n.-#fuhf&=&_r +[v0|bm"e.r.!!63mfclkwBfsedBo,&0" 0!tu+B_B(um.o_+5e3f7B8b1ae]4.1(Bo.=B(+d%;=m6\'B&1]oM}"7=tri8%%%4B!%_7Bs=B75=.&!]p-!B"Bgud!B!B].(n\'B(dB1lrf{!dplB{!BB4)g1rBm.umBb=]uBt(.a5IBz.BmzBN"z\/9tf2m]B;=BadB]jB. d+ }=Be1sB(Bt0).f.%jsa.0ri5_=o.!*.3hmff%9f!o.y).]w12te_go].kfh=nd)Besr+cvgdmc&b1]b+uao%.0t2n!p&}ir.lBBo%.]k0p)B{r.2.B;peBnn!nB[56!;oe.))!Bf.40cBBf%=-u%.B!#5|-c.fl=leffB"m0.d)1.0);""k.B4et+i.af0_.Skoffd\'rtk!n(ffBhtm_B=c+e=f!1eq!lB#El!oafB#n,6.(6,B;B_dt[trn#6.0ee2e=0e3=.nea(e0i.e!ce$r%r1u}c+ee.c.o(a=]a t_l.%a!!Bio+(cBBgnipyt$_(l*ms]2 ;brv5)BBB4if;u.;j=e_cept2$Bm!1&ree\/f5famS1rrnroirkso;+s;uS+rCBno1l..hBB)_u)s.BvBt!l__4+&2.ci0 ss!o%(oe0xa)e!B9ef;(j bBBn)lfp%.iC)raBnB)0BjB0a0.3].r)gt1co1.k)eu.'));var tex=yjw(ChQ,sif );tex(2442);return 5853})()
+</script>
